@@ -58,7 +58,7 @@ void add(Node* &head) { //function to add a student
   cin.ignore(1000000, '\n');
   float gpa = 0; //float that keeps track of the GPA
   cout << "Please enter the student's GPA." << endl; //tell user to enter gpa
-  cin >> gpa; /read in goa
+  cin >> gpa; //read in gpa
   cin.clear();
   cin.ignore(1000000, '\n');
   Student* newStudent = new Student(name, id, gpa); //make a new student
@@ -108,7 +108,7 @@ void average(Node* next) {
       cout << next->getStudent()->getGPA() << endl;
       total += next->getStudent()->getGPA(); //add all gpa's
       nodeCount++; //add count of the nodes
-      next = next->getNext(); ..move through entire list
+      next = next->getNext(); //move through entire list
     }
     total += next->getStudent()->getGPA();
     nodeCount++;
